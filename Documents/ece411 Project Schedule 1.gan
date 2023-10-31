@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="ece411 Project Schedule" company="" webLink="http://" view-date="2023-10-30" view-index="0" gantt-divider-location="350" resource-divider-location="300" version="3.2.3230" locale="en_US">
+    <description>
+        <![CDATA[Project schedule for ece411 team5's audio visualizer.]]>
+    </description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[19]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#ff3366 #ff6666]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="203" order="0"/>
+        <field id="1" name="Default role" width="78" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="7" name="Breadboard Prototype" color="#8cb6ce" meeting="false" start="2023-10-30" duration="3" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Create a breadboard prototype of the audio visualizer. Done by putting all the components together onto a BB and using wires on hand to connect the circuit. ]]>
+            </notes>
+        </task>
+        <task id="13" name="Updated Schematic and Preliminary Layout" color="#8cb6ce" meeting="false" start="2023-10-30" duration="3" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Your schematic should now be much closer to completion.
+
+Your preliminary board layout should have all of your major components on it, including power supply, sensor, controller, and actuator. It should have a vaguely reasonable board outline. It doesn't have to be fully routed, or even halfway routed, but components should be grouped together, and components should be put in sane places.
+
+And, of course, make sure this is checked in under version control!
+
+Submit it in TWO WAYS:
+
+Print a PDF of your schematic and board layout and upload it to Canvas.
+Enter a URL to your collaboration site to the folder where your schematic and layout files are checked in.]]>
+            </notes>
+            <depend id="15" type="2" difference="3" hardness="Strong"/>
+        </task>
+        <task id="10" name="Code Microphone" color="#8cb6ce" meeting="false" start="2023-11-03" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Interface microphone component with ESP32 and make it functional.
+]]>
+            </notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Code LED Control" color="#8cb6ce" meeting="false" start="2023-11-03" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Interface 8x32 LED panel with ESP32 and be able to control it. Basic control being able to light up "bars" to represent the incoming frequencies.
+]]>
+            </notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="Code Frequency Analyzer" color="#8cb6ce" meeting="false" start="2023-11-03" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Code a frequency analyzer (FFS) onto the ESP32.]]>
+            </notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="Combine and Test Code" color="#8cb6ce" meeting="false" start="2023-11-08" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Combine the code from each component to get a working audio visualizer prototype.]]>
+            </notes>
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" name="Debug and Fix" color="#8cb6ce" meeting="false" start="2023-11-13" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Debug the combined code and fix any errors.]]>
+            </notes>
+        </task>
+        <task id="9" name="Bill of Materials" color="#8cb6ce" meeting="false" start="2023-11-04" duration="2" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Final BOM filled here: https://docs.google.com/spreadsheets/d/1jbas32DcEDZ59e13n7u7aIlfJYj-6RpcqCJsSKwKe8E/edit?usp=sharing
+
+Make sure to upload to GitHub]]>
+            </notes>
+        </task>
+        <task id="15" name="Rough Draft of CAD" color="#8cb6ce" meeting="false" start="2023-11-05" duration="3" complete="1" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[The only things left are changes for out of stock components, changes from design reviews, changes for DFX, etc.!
+
+And, of course, make sure this is checked in under version control!
+
+Submit it in TWO WAYS:
+
+Print a PDF of your schematic and board layout and upload it to Canvas.
+Enter a URL to your collaboration site to the folder where your schematic and layout files are checked in.]]>
+            </notes>
+            <depend id="17" type="2" difference="3" hardness="Strong"/>
+        </task>
+        <task id="16" name="Functional Decomposition" color="#8cb6ce" meeting="false" start="2023-11-04" duration="3" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Draw a top-level (Level 0) block diagram of your practicum project showing all inputs and outputs.
+
+Draw a Level 1 block diagram showing the principal components or modules of your project along with the interconnections between them. LABEL ALL INTERCONNECTIONS.
+
+Consult the lecture slides for proper format for capturing the block diagram and describing inputs and outputs.
+
+Post these to your collab site and upload a PDF to Canvas.]]>
+            </notes>
+        </task>
+        <task id="17" name="Design Review" color="#8cb6ce" meeting="false" start="2023-11-11" duration="4" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Have at least one other team design review your schematic and layout. Bonus points for more than one design review by more than one team. Be attentive! Take notes!
+
+Submit which team(s) (use their team number) did your design review(s).]]>
+            </notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" name="Final CAD" color="#8cb6ce" meeting="false" start="2023-11-15" duration="2" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[After your design review, fix all of the critical issues, go through all the checklists again, and then declare it done!
+
+And of course, check it in to your versioning system!
+
+Submit it in TWO WAYS:
+
+Print a PDF of your schematic and board layout and upload it to Canvas.
+Enter a URL to your collaboration site to the folder where your schematic and layout files are checked i]]>
+            </notes>
+        </task>
+        <task id="19" name="Send Board to FAB" color="#ff6666" meeting="false" start="2023-11-16" duration="1" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Must be sent between 12 p.m. Thursday and 10 a.m. Friday.]]>
+            </notes>
+        </task>
+        <task id="20" name="Test Plan" color="#8cb6ce" meeting="false" start="2023-11-23" duration="5" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Create a comprehensive hierarchical test plan for your practicum project.   Consult the course lecture notes for guidelines. Submit at least three test plans (see optional testing template document). 
+
+Create detailed test case descriptions for two tests included in your test plan.
+
+Your work will be graded on completeness, conformance to design documentation requirements as described in class, and quality and clarity of the individual test cases.
+
+Post these to your team wiki and upload a single PDF file of them to Canvas.]]>
+            </notes>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Assemble Final Build" color="#8cb6ce" meeting="false" start="2023-11-28" duration="1" complete="0" thirdDate="2023-11-09" thirdDate-constraint="0" expand="true"/>
+        <task id="21" name="Presentation" color="#ff3366" meeting="false" start="2023-12-07" duration="1" complete="0" thirdDate="2023-10-30" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[30 minutes, either Thursday or Friday
+]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Gene Hu" function="SoftwareDevelopment:2" contacts="ghu@pdx.edu" phone=""/>
+        <resource id="1" name="Flynn" function="SoftwareDevelopment:2" contacts="flynn5@pdx.edu" phone=""/>
+        <resource id="2" name="Meshal" function="SoftwareDevelopment:2" contacts="meshal7@pdx.edu" phone=""/>
+        <resource id="3" name="Aziz" function="SoftwareDevelopment:2" contacts="alateeq@pdx.edu" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="21" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="3" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
