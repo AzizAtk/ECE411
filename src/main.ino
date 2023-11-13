@@ -11,14 +11,23 @@
  *
  */
 #include "Arduino.h"
+#include "audio_reactive.h"
 
-void setup() { pinMode(LED_BUILTIN, OUTPUT); }
+int fft_results[16];
+
+void setup() {
+  Serial.begin(115200);
+  setup_audio();
+}
 
 void loop() {
-  // Test board
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
+  Serial.print("[ ");
+  for (int i = 0; i < 16; i++) {
+    Serial.print(fft_results[i]);
 
-  delay(1000);
+    if (i < 15) Serial.print(", ");
+  }
+  Serial.println(" ]");
+
+  delay(500);
 }
