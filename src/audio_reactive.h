@@ -15,7 +15,7 @@
 #include <driver/i2s.h>
 
 // Audio configuration
-#define GAIN 20    // Gain, boosts input level
+#define GAIN 15    // Gain, boosts input level
 #define SQUELCH 5  // Squelch, cuts out low level sounds
 
 // I2S configuration
