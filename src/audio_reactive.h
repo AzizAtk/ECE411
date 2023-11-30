@@ -19,9 +19,9 @@
 #define SQUELCH 5  // Squelch, cuts out low level sounds
 
 // I2S configuration
-#define I2S_WS_PIN 15
-#define I2S_SD_PIN 32
-#define I2S_SCK_PIN 14
+#define I2S_WS_PIN 13
+#define I2S_SD_PIN 16
+#define I2S_SCK_PIN 4
 #define I2S_PORT I2S_NUM_0
 #define MIN_SHOW_DELAY 15
 
