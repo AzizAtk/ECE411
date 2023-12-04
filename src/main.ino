@@ -67,7 +67,7 @@ void loop() {
   }
 
   // Decay peaks
-  EVERY_N_MILLISECONDS(100) {
+  EVERY_N_MILLISECONDS(200) {
     for (int i = 0; i < BANDS; i++) {
       if (peaks[i] > 0) {
         peaks[i]--;
