@@ -17,7 +17,7 @@
 #include "audio_reactive.h"
 
 #define BRIGHTNESS 32  // Set the brightness level (0-255)
-#define LED_PIN 27
+#define LED_PIN 26
 #define MATRIX_WIDTH 32
 #define MATRIX_HEIGHT 8
 #define BANDS 16
